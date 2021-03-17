@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="1067.0" style="-fx-background-color: BLUE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.LoginController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <ImageView fx:id="imgvw" fitHeight="405.0" fitWidth="720.0" layoutX="147.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/login.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <PasswordField fx:id="Password" layoutX="216.0" layoutY="203.0" onAction="#PasswordAction" />
+      <TextField fx:id="username" layoutX="216.0" layoutY="164.0" onAction="#UsernameAction" />
+      <Button fx:id="register" layoutX="480.0" layoutY="355.0" mnemonicParsing="false" onAction="#registerAction" opacity="0.0" prefHeight="28.0" prefWidth="75.0" style="-fx-background-color: #394c61;" text="REGISTRATI" textAlignment="CENTER" textFill="#ffff21">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Guest" layoutX="572.0" layoutY="354.0" mnemonicParsing="false" onAction="#guestAction" opacity="0.0" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #394c61;" text="GIOCA COME OSPITE" textFill="#ffff21">
+         <font>
+            <Font name="Chalkboard" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lbl" layoutX="555.0" layoutY="361.0" text=" o" textFill="WHITE">
+         <font>
+            <Font name="Chalkboard" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginbutton" contentDisplay="GRAPHIC_ONLY" layoutX="111.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginAction" opacity="0.0" prefHeight="27.0" prefWidth="98.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="exitbutton" layoutX="33.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitAction" opacity="0.0" prefHeight="35.0" prefWidth="32.0" text="exit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

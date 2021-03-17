@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.RegisterController">
+   <children>
+      <ImageView fitHeight="405.0" fitWidth="720.0" layoutX="281.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/register.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="322.0" layoutY="246.0" prefHeight="27.0" prefWidth="253.0" />
+      <TextField fx:id="username" layoutX="322.0" layoutY="183.0" prefHeight="27.0" prefWidth="253.0" />
+      <Button fx:id="registerbutton" layoutX="441.0" layoutY="320.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="27.0" prefWidth="134.0" text="REGISTRATI">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backbutton" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#backAction" opacity="0.0" prefHeight="38.0" prefWidth="55.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.ImageQuizController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1067.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.3333740234375" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../bin/progetto/resources/music.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image1" fitHeight="187.0" fitWidth="278.0" layoutX="128.0" layoutY="338.0" onMouseClicked="#CheckAnswer1" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image2" fitHeight="179.0" fitWidth="270.0" layoutX="442.0" layoutY="346.0" onMouseClicked="#CheckAnswer2" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image3" fitHeight="179.0" fitWidth="255.0" layoutX="742.0" layoutY="339.0" onMouseClicked="#CheckAnswer3" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="question" contentDisplay="TOP" layoutX="184.0" layoutY="101.0" prefHeight="96.0" prefWidth="731.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="checklabel" alignment="CENTER" layoutX="367.0" layoutY="261.0" opacity="0.0" prefHeight="58.0" prefWidth="420.0" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="25.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" opacity="0.0" prefHeight="69.0" prefWidth="84.0" style="-fx-background-color: #394c61;" text="back" textAlignment="CENTER" textFill="#ffff21">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

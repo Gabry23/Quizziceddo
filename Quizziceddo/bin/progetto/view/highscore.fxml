@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.HighscoreMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1067.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/highscore.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backbutton" layoutX="28.0" layoutY="30.0" mnemonicParsing="false" onAction="#backAction" opacity="0.0" prefHeight="60.0" prefWidth="73.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="label1" alignment="TOP_LEFT" layoutX="400.0" layoutY="118.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img1" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="label2" alignment="TOP_LEFT" layoutX="400.0" layoutY="178.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" alignment="TOP_LEFT" layoutX="400.0" layoutY="237.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" alignment="TOP_LEFT" layoutX="400.0" layoutY="290.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="label5" alignment="TOP_LEFT" layoutX="400.0" layoutY="346.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="label6" alignment="TOP_LEFT" layoutX="400.0" layoutY="400.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="label7" alignment="TOP_LEFT" layoutX="400.0" layoutY="458.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="label8" alignment="TOP_LEFT" layoutX="400.0" layoutY="514.0" prefHeight="45.0" prefWidth="267.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img2" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img3" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img4" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img5" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img6" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img7" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img8" fitHeight="45.0" fitWidth="45.0" layoutX="710.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

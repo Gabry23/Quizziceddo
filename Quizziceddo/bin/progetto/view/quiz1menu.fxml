@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.QuizOneController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1067.0" layoutX="310.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/quiz.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="questionlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="106.0" prefHeight="168.0" prefWidth="816.0">
+         <font>
+            <Font name="Avenir Roman" size="35.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="timebar" layoutX="221.0" layoutY="545.0" prefHeight="20.0" prefWidth="625.0" progress="0.0" />
+      <Label fx:id="answer1label" alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="321.0" prefHeight="83.0" prefWidth="395.0">
+         <font>
+            <Font name="Avenir Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="answer2label" alignment="CENTER" contentDisplay="CENTER" layoutX="547.0" layoutY="321.0" prefHeight="83.0" prefWidth="401.0">
+         <font>
+            <Font name="Avenir Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="answer4label" alignment="CENTER" contentDisplay="CENTER" layoutX="547.0" layoutY="425.0" prefHeight="89.0" prefWidth="401.0">
+         <font>
+            <Font name="Avenir Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="answer3label" alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="425.0" prefHeight="89.0" prefWidth="395.0">
+         <font>
+            <Font name="Avenir Roman" size="30.0" />
+         </font>
+      </Label>
+      <Pane fx:id="answerpane0" layoutX="338.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane1" layoutX="377.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane2" layoutX="415.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane3" layoutX="454.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane4" layoutX="493.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane5" layoutX="531.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane6" layoutX="570.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane7" layoutX="608.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane8" layoutX="646.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <Pane fx:id="answerpane9" layoutX="684.0" layoutY="23.0" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: WHITE;" />
+      <ImageView fx:id="pointspane" fitHeight="350.0" fitWidth="655.0" layoutX="217.0" layoutY="126.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/points.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="pointslabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="133.0" opacity="0.0" prefHeight="219.0" prefWidth="614.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Avenir Roman" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="backbutton" layoutX="30.0" layoutY="29.0" mnemonicParsing="false" onAction="#backAction" opacity="0.0" prefHeight="60.0" prefWidth="71.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="playagainbutton" layoutX="271.0" layoutY="379.0" mnemonicParsing="false" onAction="#playAgain" opacity="0.0" prefHeight="45.0" prefWidth="220.0" text="GIOCA ANCORA!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backmenubutton" layoutX="570.0" layoutY="379.0" mnemonicParsing="false" onAction="#backToMenu" opacity="0.0" prefHeight="45.0" prefWidth="220.0" text="TORNA AL MENU PRINCIPALE">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <ToggleButton fx:id="answer1" layoutX="124.0" layoutY="321.0" mnemonicParsing="false" onAction="#checkAnswer1" opacity="0.0" prefHeight="83.0" prefWidth="395.0" style="-fx-background-color: WHITE;">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <ToggleButton fx:id="answer2" layoutX="553.0" layoutY="321.0" mnemonicParsing="false" onAction="#checkAnswer2" opacity="0.0" prefHeight="83.0" prefWidth="395.0" style="-fx-background-color: WHITE;">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <ToggleButton fx:id="answer4" layoutX="547.0" layoutY="425.0" mnemonicParsing="false" onAction="#checkAnswer4" opacity="0.0" prefHeight="83.0" prefWidth="401.0">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <ToggleButton fx:id="answer3" layoutX="124.0" layoutY="425.0" mnemonicParsing="false" onAction="#checkAnswer3" opacity="0.0" prefHeight="83.0" prefWidth="395.0" style="-fx-background-color: WHITE;">
+         <font>
+            <Font name="Avenir Roman" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+   </children>
+</AnchorPane>

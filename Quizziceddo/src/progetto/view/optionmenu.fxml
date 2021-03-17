@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.OptionMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1067.0" layoutX="164.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/optionmenu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="changeimagebutton" layoutX="403.0" layoutY="307.0" mnemonicParsing="false" onAction="#changeimageAction" opacity="0.0" prefHeight="58.0" prefWidth="262.0" text="MODIFICA IMMAGINE DEL PROFILO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="changeusernamebutton" layoutX="403.0" layoutY="242.0" mnemonicParsing="false" onAction="#changeusernameAction" opacity="0.0" prefHeight="58.0" prefWidth="262.0" text="MODIFICA USERNAME">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="createbutton" layoutX="403.0" layoutY="441.0" mnemonicParsing="false" onAction="#createAction" opacity="0.0" prefHeight="58.0" prefWidth="262.0" text="CREA UNA DOMANDA">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="feedbackbutton" layoutX="403.0" layoutY="510.0" mnemonicParsing="false" onAction="#sendFeedbackAction" opacity="0.0" prefHeight="58.0" prefWidth="262.0" text="INVIA UN FEEDBACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ToggleButton fx:id="togglesound" layoutX="403.0" layoutY="375.0" mnemonicParsing="false" onAction="#soundAction" opacity="0.0" prefHeight="58.0" prefWidth="262.0" text="SUONO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <Button fx:id="backbutton" layoutX="31.0" layoutY="30.0" mnemonicParsing="false" onAction="#backAction" opacity="0.0" prefHeight="58.0" prefWidth="71.0" text="back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.SecondMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1067.0" layoutX="127.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/menu2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="timebutton" layoutX="393.0" layoutY="240.0" mnemonicParsing="false" onAction="#timeAction" opacity="0.0" prefHeight="67.0" prefWidth="282.0" text="Tempo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="complete" layoutX="393.0" layoutY="354.0" mnemonicParsing="false" onAction="#completeAction" opacity="0.0" prefHeight="67.0" prefWidth="282.0" text="Completa">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="quizziceddobutton" layoutX="393.0" layoutY="465.0" mnemonicParsing="false" onAction="#quizziceddoAction" opacity="0.0" prefHeight="67.0" prefWidth="282.0" text="Quizziceddo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backbutton" layoutX="29.0" layoutY="31.0" mnemonicParsing="false" onAction="#backAction" opacity="0.0" prefHeight="55.0" prefWidth="75.0" text="back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="userviewer" layoutX="109.0" layoutY="14.0" prefHeight="47.0" prefWidth="347.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="levellabel" layoutX="109.0" layoutY="59.0" prefHeight="41.0" prefWidth="78.0" text="LIVELLO" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelviewer" layoutX="187.0" layoutY="65.0" prefHeight="30.0" prefWidth="92.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

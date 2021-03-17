@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="600.0" style="-fx-background-color: BLUE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.QuizOneController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="200.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/points.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="pointslabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="-1.0" opacity="0.0" prefHeight="275.0" prefWidth="600.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Avenir Roman" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="playagainbutton" layoutX="51.0" layoutY="283.0" mnemonicParsing="false" onAction="#playAgain" prefHeight="45.0" prefWidth="220.0" text="GIOCA ANCORA!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backmenubutton" layoutX="322.0" layoutY="283.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="45.0" prefWidth="220.0" text="TORNA AL MENU PRINCIPALE">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

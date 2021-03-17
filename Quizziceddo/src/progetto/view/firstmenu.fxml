@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.controller.FirstMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1067.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/menu1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="playbutton" layoutX="393.0" layoutY="229.0" mnemonicParsing="false" onAction="#playAction" opacity="0.0" prefHeight="65.0" prefWidth="281.0" text="gioca">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="highscorebutton" layoutX="394.0" layoutY="314.0" mnemonicParsing="false" onAction="#highscoreAction" opacity="0.0" prefHeight="65.0" prefWidth="281.0" text="Classifica">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="settingsbutton" layoutX="393.0" layoutY="399.0" mnemonicParsing="false" onAction="#settingsAction" opacity="0.0" prefHeight="65.0" prefWidth="281.0" text="Opzioni">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="logoutbutton" layoutX="393.0" layoutY="484.0" mnemonicParsing="false" onAction="#logoutAction" opacity="0.0" prefHeight="65.0" prefWidth="281.0" text="Logout">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="userviewer" layoutX="115.0" prefHeight="47.0" prefWidth="347.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="levellabel" layoutX="115.0" layoutY="37.0" prefHeight="41.0" prefWidth="78.0" text="LIVELLO" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelviewer" layoutX="193.0" layoutY="43.0" prefHeight="30.0" prefWidth="92.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="userImage" fitHeight="89.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
